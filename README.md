@@ -1,13 +1,14 @@
-# Sample Hardhat Project
+# Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a basic Hardhat use case. It comes with a sample openzeppelin contract.
 
-Try running some of the following tasks:
+Try running some of the following script:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npm i 
+npx hardhat compile
+
+npx hardhat run  scripts/test_access_control.js 
+npx hardhat run  scripts/test_mycontract_upgrable.js 
+npx hardhat run  scripts/test_tNFT.js 
 ```
